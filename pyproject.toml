@@ -12,11 +12,12 @@ dependencies = [
     "jupyterlab (>=4.4.3,<5.0.0)",
     "pandas (>=2.2.3,<3.0.0)",
     "pyarrow (>=20.0.0,<21.0.0)",
-    "boto3 (>=1.38.29,<2.0.0)"
+    "boto3 (>=1.38.29,<2.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "test_spark", from = "src"}]
+packages = [{include = "clients", from = "src"}]
 
 
 [build-system]
